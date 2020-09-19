@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+final GoogleSignIn gSignIn = GoogleSignIn();
 
 class HomePage extends StatefulWidget {
   @override
@@ -8,6 +11,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   bool isSignedIn = false;
+
+  loginUser() {
+    gSignIn.signIn();
+  }
+
   Widget buildHomeScreen(){
     return Text('already signed in');
   }
@@ -31,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             Text('instagram',
               style: TextStyle(fontSize:92 ,color: Colors.white,fontFamily: "Signatra"),),
             GestureDetector(
-              onTap: ()=> "button tapped",
+              onTap: ()=> loginUser(),
               child: Container(
                 width: 270,
                 height: 65,
