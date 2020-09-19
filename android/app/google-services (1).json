@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "70157616094",
+    "firebase_url": "https://satyendra-instagram-app.firebaseio.com",
+    "project_id": "satyendra-instagram-app",
+    "storage_bucket": "satyendra-instagram-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70157616094:android:705961b7413eb44fa0534f",
+        "android_client_info": {
+          "package_name": "com.muhammadali.buddiesgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70157616094-09a9bpk8qnu27cff4debioesk8cak8lr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muhammadali.buddiesgram",
+            "certificate_hash": "77868b8ed0d4af9d489d7d3487600a4d4144a3d9"
+          }
+        },
+        {
+          "client_id": "70157616094-2lbvct4a0oav1l802rv9gbfoq2qusqun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9IufOqaBQx2bDnUj96MILinHuP0D9Qpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70157616094-2lbvct4a0oav1l802rv9gbfoq2qusqun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
