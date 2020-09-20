@@ -18,8 +18,10 @@ class _HomePageState extends State<HomePage> {
   bool isSignedIn = false;
   PageController pageController;
   int getPageIndex = 0;
+
   void initState(){
   super.initState();
+  pageController = PageController();
   gSignIn.onCurrentUserChanged.listen((gSigninAccount){
     controlSignIn(gSigninAccount);
   }, onError:(gError){
@@ -63,9 +65,7 @@ class _HomePageState extends State<HomePage> {
   }
 
 onTapChangePage(int pageIndex  ){
-  setState(() {
-    this.getPageIndex = pageIndex;
-  });
+
     pageController.animateToPage(pageIndex, duration: Duration(milliseconds: 400),
         curve: Curves.bounceInOut,);
 }
