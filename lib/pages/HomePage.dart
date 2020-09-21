@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   gSignIn.onCurrentUserChanged.listen((gSigninAccount){
     controlSignIn(gSigninAccount);
   }, onError:(gError){
-    print("Error Message: " +gError);
+    print("Error Message: " + gError);
   });
 
   gSignIn.signInSilently(suppressErrors: false).then((gSignInAccount){
@@ -103,7 +103,7 @@ onTapChangePage(int pageIndex  ){
     return Scaffold(
       body: PageView(
         children: [
-          TimeLinePage(),
+          RaisedButton.icon(onPressed: logoutUser, icon: Icon(Icons.close), label: Text("Sign out")),
           SearchPage(),
           UploadPage(),
           NotificationsPage(),
