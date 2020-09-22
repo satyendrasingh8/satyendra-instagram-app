@@ -122,7 +122,7 @@ getUserCurrentLocation() async {
     final tDirectory = await getTemporaryDirectory();
     final path = tDirectory.path;
     ImD.Image mImageFile = ImD.decodeImage(file.readAsBytesSync());
-  final compressedImageFile = File('$path/img_$postId.jpg')..writeAsBytesSync(ImD.encodeJpg(mImageFile,quality: 90));
+  final compressedImageFile = File('$path/img_$postId.jpg')..writeAsBytesSync(ImD.encodeJpg(mImageFile,quality: 60));
   setState(() {
     file = compressedImageFile;
   });
