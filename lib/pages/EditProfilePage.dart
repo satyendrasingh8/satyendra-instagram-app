@@ -1,5 +1,6 @@
 import 'package:buddiesgram/models/user.dart';
 import 'package:buddiesgram/pages/HomePage.dart';
+import 'package:buddiesgram/pages/ProfilePage.dart';
 import 'package:buddiesgram/widgets/ProgressWidget.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -68,7 +69,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
         title: Text("Edit Profile",
         style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
         actions: [
-          IconButton(icon: Icon(Icons.done, color: Colors.white,size: 30.0,), onPressed:()=> Navigator.pop(context),),
+          IconButton(icon: Icon(Icons.done, color: Colors.white,size: 30.0,), onPressed:()=> Navigator.push(context,MaterialPageRoute(builder: (context)=> HomePage() )),),
         ],
       ),
       body: loading ? circularProgress(): ListView(
